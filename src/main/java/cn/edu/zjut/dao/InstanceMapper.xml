@@ -21,10 +21,6 @@
     <insert id="insertSignInstance" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="signInstID"
             keyColumn="signinstance_id">
 
-        <!--        <selectKey keyProperty="signInstID" resultType="java.lang.Integer" order="AFTER">
-        /*            select if(max(signinstance_id) is null, 1, max(signinstance_id) + 1) as signInstID from signinstance
-        */      	 		SELECT LAST_INSERT_ID()
-                </selectKey>-->
         insert into signinstance (sign_id,starttime,endtime,longitude,latitude,radius,placename,date)values
         <foreach collection="list" item="item" index="index" separator=",">
             (

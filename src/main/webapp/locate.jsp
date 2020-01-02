@@ -1,9 +1,15 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: apple
+  Date: 2019/11/25
+  Time: 16:26
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html lang="zh-CN">
 
 <head>
-    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PositionPicker/examples/positionPicker.html -->
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>拖拽选址</title>
@@ -170,16 +176,13 @@
             sessionStorage.setItem('message', json);
             document.cookie = document.getElementById('lnglat').innerHTML + ","
                 + document.getElementById('address').innerHTML;
-            // window.open("/templateUI.jsp", 'window');
-            // history.go(-1);
-            // window.location.href='templateUI.jsp'
-            // self.location=document.referrer;
+
             var str = message.position + "," + message.address;
             var result = str.split(',');
-            window.open("templateUI.jsp?longitude="+result[0]+"&latitude="+result[1]
-                +"&address="+message.address
-                , 'new_window');
-            window.close();
+
+            window.location.href = "templateUI.jsp?longitude="+result[0]+"&latitude="+result[1]
+                +"&address="+message.address;
+
         });
         AMap.event.addDomListener(stopButton, 'click', function () {
             geolocation.getCurrentPosition();

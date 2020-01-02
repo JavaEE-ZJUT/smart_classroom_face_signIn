@@ -25,9 +25,9 @@ public interface IQuerySignService {
 
     List<Sign> getAllSignfuzzilybyName(String name) throws Exception;
 
-    ;//模糊查询根据打卡名
+    //模糊查询根据打卡名
 
     List<Sign> getAllSignfuzzilybyCal(String cal) throws Exception;
 
-    ;//模糊查询根据日期
+    //模糊查询根据日期
 }

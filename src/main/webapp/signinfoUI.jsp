@@ -2,7 +2,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
-<%@ include file="UITeaHead.jsp" %>
+<%@ include file="Tea_UIHead.jsp" %>
 <link rel="stylesheet" href="./cssfile/kalendae.css" type="text/css">
 <script type='text/javascript' src='./js/kalendae.standalone.js'></script>
 
@@ -77,18 +77,5 @@
             console.log(str);
         }
     </script>
-
-    <%--<script>--%>
-    <%--    //Demo--%>
-    <%--    layui.use('form', function () {--%>
-    <%--        var form = layui.form;--%>
-
-    <%--        //监听提交--%>
-    <%--        form.on('submit(formDemo)', function (data) {--%>
-    <%--            layer.msg(JSON.stringify(data.field));--%>
-    <%--            return false;--%>
-    <%--        });--%>
-    <%--    });--%>
-    <%--</script>--%>
     <%@ include file="UIbottom.jsp" %>
 </html>

@@ -3,10 +3,7 @@ package cn.edu.zjut.action;
 
 import cn.edu.zjut.po.Sign;
 import cn.edu.zjut.po.Teacher;
-import cn.edu.zjut.service.IResultService;
 import cn.edu.zjut.service.ITeacherService;
-import cn.edu.zjut.service.ResultService;
-import com.opensymphony.xwork2.ActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -114,5 +111,9 @@ public class TeacherAction {
             return "login";
 
         }
+    }
+
+    public String goToLocate(){
+        return "success";
     }
 }

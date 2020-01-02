@@ -11,13 +11,13 @@ public interface IUserService {
      * @param fieldData
      * @return
      */
-    public ByteArrayOutputStream exportExcel(ArrayList fieldName, ArrayList fieldData);
+    ByteArrayOutputStream exportExcel(ArrayList fieldName, ArrayList fieldData);
 
     /**
      * Excel导出学生信息
      * @param file
      * @return
      */
-    public boolean inputExcel(File file);
+    boolean inputExcel(File file);
 
 }

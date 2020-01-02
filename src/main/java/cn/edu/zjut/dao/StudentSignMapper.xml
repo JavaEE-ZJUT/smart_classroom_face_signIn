@@ -20,10 +20,6 @@
 
     <insert id="insertRecord" parameterType="cn.edu.zjut.po.StudentSign" useGeneratedKeys="true" keyProperty="stuSignID"
             keyColumn="autoid">
-
-        <!-- <selectKey keyProperty="signInstID" resultType="java.lang.Integer" order="BEFORE">
-             select if(max(autoid) is null, 1, max(autoid) + 1) as stuSignID from student_sign
-         </selectKey>-->
         insert into
         student_sign(student_id,signinstance_id,status)
         values(#{stuID},#{signInstID},0)

@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ISignInstanceService {
 
-    public int insertSignInstance(String[] stu, String[] dates, int templateid, int chooseid);
-    public List<Student> listAllStudents();
+    int insertSignInstance(String[] stu, String[] dates, int templateid, int chooseid);
+    List<Student> listAllStudents();
 }

@@ -41,7 +41,7 @@ public class ListAction {
             return "success";
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("action de wenti");
+            System.out.println("action is failed");
         }
         return "fail";
     }

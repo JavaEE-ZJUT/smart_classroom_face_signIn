@@ -16,5 +16,4 @@ public interface ResultMapper {
 
     List<Sign> selectByCreatetime(String createtime, int teacher_id) throws Exception;
 
-
 }

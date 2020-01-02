@@ -2,7 +2,7 @@ package cn.edu.zjut.action;
 
 import cn.edu.zjut.po.Sign;
 import cn.edu.zjut.service.IQuerySignService;
-import cn.edu.zjut.service.QuerySignService;
+import cn.edu.zjut.service.Impl.QuerySignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;

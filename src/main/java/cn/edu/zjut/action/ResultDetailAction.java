@@ -4,13 +4,14 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import cn.edu.zjut.service.Impl.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import cn.edu.zjut.po.*;
 import cn.edu.zjut.service.*;
 
-//某个打卡下学生签到情况
+
 @Controller
 public class ResultDetailAction {
     private DailyResult dailyresult; //小打卡
@@ -87,7 +88,7 @@ public class ResultDetailAction {
      * 根据某次详细签到的ID获得该次签到的学生签到情况
      *
      * @return String
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String getResultDetail() {
         try {
@@ -103,7 +104,7 @@ public class ResultDetailAction {
      * 修改学生的签到情况
      *
      * @return String
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String changeResult() {//修改学生签到情况
         try {

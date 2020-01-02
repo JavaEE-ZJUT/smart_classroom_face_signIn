@@ -1,17 +1,21 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: apple
+  Date: 2019/11/25
+  Time: 16:26
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
 <body>
-<%@ include file="UITeaHead.jsp" %>
+<%@ include file="Tea_UIHead.jsp" %>
 <div class="layui-body">
     <div class="layui-text" style="font-size: 25px; color: #393D49;width: 400px;height: 30px;padding: 35px">
         模板管理
     </div>
-    <div style="padding-left: 35px;">
-    <button class="layui-btn" onclick="javascrtpt:window.open('templateUI.jsp', 'window');">创建模板</button>
-    </div>
-    <div style="width: 1250px;margin: 20px 40px;">
+    <div style="width: 1140px;margin: 20px 40px;">
         <table class="layui-table" lay-data="{page:true, id:'teaTable'}" lay-filter="test">
             <thead>
             <tr>
@@ -20,27 +24,11 @@
                 <th lay-data="{field:'endTime', width:150, sort:true}">签到结束时间</th>
                 <th lay-data="{field:'longitude', width:120, sort:true}">经度</th>
                 <th lay-data="{field:'latitude', width:120, sort:true}">纬度</th>
-                <th lay-data="{field:'placeName', width:420, sort:true}">打卡地点</th>
+                <th lay-data="{field:'placeName', width:320, sort:true}">打卡地点</th>
                 <th lay-data="{field:'ope', sort:false}">操作</th>
             </tr>
             </thead>
             <tbody>
-            <%--    <s:iterator value="#session['teacherList']">
-                    <tr>
-                        <td lay-data="{type:'checkbox'}">#stuID</td>
-                        <td><s:property value="teaID"/></td>
-                        <td><s:property value="name"/></td>
-                        <s:if test="%{sex==1}">
-                            <td>男</td>
-                        </s:if>
-                        <s:else>
-                            <td>女</td>
-                        </s:else>
-                        <td><s:property value="phone"/></td>
-                        <td><a href="teaMessage?teaID=<s:property value="teaID"/>">编辑</a>
-                            <a href="teaMessageDelete?teaID=<s:property value="teaID"/>">删除</a></td>
-                    </tr>--%>
-            <%--   </s:iterator>--%>
             <s:if test="#session.taskList.templates.size()==0">
             <td>您的列表为空</td>
             <tr>
@@ -107,17 +95,6 @@
         });
     });
 </script>
-<%--<script>--%>
-<%--    //Demo--%>
-<%--    layui.use('form', function () {--%>
-<%--        var form = layui.form;--%>
-<%--        //监听提交--%>
-<%--        form.on('submit(formDemo)', function (data) {--%>
-<%--            layer.msg(JSON.stringify(data.field));--%>
-<%--            return false;--%>
-<%--        });--%>
-<%--    });--%>
-<%--</script>--%>
 <script>
     window.onload = function () {
         document.getElementById("templateManage").className = "layui-this";

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import cn.edu.zjut.service.Impl.ResultService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -68,7 +69,7 @@ public class DailyResultAction {
      * 根据签到的ID获得该签到的列表
      *
      * @return
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String getDailyResult() {//根据大打卡的sign_id得到小打卡的列表
         //signinsatnce的sign_id由jsp传过来

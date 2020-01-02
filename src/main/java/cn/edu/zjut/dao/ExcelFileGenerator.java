@@ -17,7 +17,6 @@ public class ExcelFileGenerator {
 
     private XSSFWorkbook workBook = null;
 
-
     /**
      * @param fieldName
      * @param stuDataList

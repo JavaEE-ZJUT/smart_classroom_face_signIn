@@ -53,7 +53,7 @@
     <aop:config>
         <aop:aspect id="checkAdmin" ref="CheckAdmin">
             <aop:pointcut id="modify"
-                          expression="execution(* cn.edu.zjut.service.TeacherService.*Teacher(..)) || execution(* cn.edu.zjut.service.StudentService.*(..)) "/>
+                          expression="execution(* cn.edu.zjut.service.Impl.TeacherService.*Teacher(..)) || execution(* cn.edu.zjut.service.Impl.StudentService.*(..)) "/>
             <aop:before method="checkAdmin" pointcut-ref="modify"/>
         </aop:aspect>
     </aop:config>

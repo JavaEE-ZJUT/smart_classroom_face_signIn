@@ -3,7 +3,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
-<%@ include file="UITeaHead.jsp" %>
+<%@ include file="Tea_UIHead.jsp" %>
 <div class="layui-body">
     <div class="layui-text" style="font-size: 25px; color: #393D49;width: 400px;height: 30px;padding: 35px">
         签到详细信息
@@ -68,18 +68,6 @@
     });
 </script>
 
-<%--<script>--%>
-<%--    //Demo--%>
-<%--    layui.use('form', function () {--%>
-<%--        var form = layui.form;--%>
-
-<%--        //监听提交--%>
-<%--        form.on('submit(formDemo)', function (data) {--%>
-<%--            layer.msg(JSON.stringify(data.field));--%>
-<%--            return false;--%>
-<%--        });--%>
-<%--    });--%>
-<%--</script>--%>
 
 <%@ include file="UIbottom.jsp" %>
 </html>

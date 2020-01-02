@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+
+import cn.edu.zjut.service.Impl.ResultService;
 import com.opensymphony.xwork2.ActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,7 +14,6 @@ import com.opensymphony.xwork2.ActionSupport;
 import cn.edu.zjut.po.*;
 import cn.edu.zjut.service.*;
 
-//大打卡有关
 @Controller
 public class ResultAction extends ActionSupport {
     private Sign result; //大打卡信息
@@ -79,7 +80,7 @@ public class ResultAction extends ActionSupport {
      * 根据教师的ID查看该教师发布的所有签到
      *
      * @return
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String lookAllSign()//根据teacher_id查看该老师发布的所有签到信息
     {
@@ -98,7 +99,7 @@ public class ResultAction extends ActionSupport {
      * 根据签到名查询签到
      *
      * @return
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String getByName()//根据签到名称查找       teacher_id和sign_name查看该老师发布的信息
     {
@@ -114,7 +115,7 @@ public class ResultAction extends ActionSupport {
      * 根据创建时间查询签到
      *
      * @return
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String getByTime()//根据签到发布时间       teacher_id和createtime查看该老师发布的所有签到信息
     {
@@ -130,7 +131,7 @@ public class ResultAction extends ActionSupport {
      * 用户选择查询类别，输入查询信息，查询签到
      *
      * @return
-     * @author 王凌云
+     * @author 吴一帆
      */
     public String findSign() {
         try {

@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: apple
+  Date: 2019/11/25
+  Time: 16:26
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -6,7 +13,7 @@
 <%@ page isELIgnored="false" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<%@ include file="UITeaHead.jsp" %>
+<%@ include file="Tea_UIHead.jsp" %>
 <div class="layui-body">
     <div class="layui-text" style="font-size: 25px; color: #393D49;width: 400px;height: 30px;padding: 35px">
         <s:property value="dailyresult.sign_name"/>
@@ -72,9 +79,6 @@
         </table>
     </div>
 </div>
-<!--
-<button id="AutoPlayButton" onclick="AutoPlay('AutoPlayButton','resultdetails','AutoPlayDetail');">逐条查看</button>
--->
 <script language="javascript">
     function TestBlack(TagName, TagName1) {
         var obj = document.getElementById(TagName);

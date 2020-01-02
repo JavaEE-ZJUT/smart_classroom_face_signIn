@@ -4,7 +4,6 @@ import cn.edu.zjut.po.*;
 import cn.edu.zjut.service.ISignInstanceService;
 import cn.edu.zjut.service.IStudentService;
 import cn.edu.zjut.service.ITaskService;
-import cn.edu.zjut.service.SignInstanceService;
 import com.opensymphony.xwork2.ActionContext;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -204,7 +203,6 @@ public class TaskOutCenterAction {
             String[] stu_list = stulist.split(",");
             signInstanceService.insertSignInstance(stu_list, date_list, templateid, chooseid);
             return "success";
-
         } catch (Exception e) {
             return "fail";
         }
@@ -219,6 +217,12 @@ public class TaskOutCenterAction {
             String templateid = request.getParameter("templateid");
             int templateId = Integer.parseInt(templateid);//获得模板id
             taskService.deleteTemplate(templateId);//删除模板id
+            Map session = ActionContext.getContext().getSession();
+            Teacher teacher = (Teacher) session.get("teacher");
+            TaskList taskList = taskService.getTaskList(teacher.getTeaID());
+
+            session.put("taskList", taskList);//存储计划信息
+            session.put("teaID", teacher.getTeaID());//存储教师id
             return "success";
         } catch (Exception e) {
             return "fail";

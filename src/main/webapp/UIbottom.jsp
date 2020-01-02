@@ -1,7 +1,14 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: apple
+  Date: 2019/11/25
+  Time: 16:26
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java"  pageEncoding="UTF-8"%>
 <!-- 底部固定区域 -->
 <div class="layui-footer">
-© 软件工程小组
+© JavaEE小组
 </div>
 </div>
 <script src="layui/layui.all.js"></script>
@@ -15,12 +22,5 @@
             ,upload = layui.upload;
     }();
 </script>
-<%--<script>--%>
-<%--    //JavaScript代码区域--%>
-<%--    layui.use('element', function(){--%>
-<%--        var element = 软件工程小组;--%>
-
-<%--    });--%>
-<%--</script>--%>
 </body>
 

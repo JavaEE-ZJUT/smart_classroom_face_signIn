@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.edu.zjut</groupId>
-    <artifactId>FaceCheck</artifactId>
+    <artifactId>faceCheck</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>FaceCheck</name>
+    <name>faceCheck</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

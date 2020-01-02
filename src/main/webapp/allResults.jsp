@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: apple
+  Date: 2019/11/25
+  Time: 16:26
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"  isELIgnored="false" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -5,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<%@ include file="UITeaHead.jsp" %>
+<%@ include file="Tea_UIHead.jsp" %>
 <div class="layui-body">
     <div class="layui-text" style="font-size: 25px; color: #393D49;width: 400px;height: 30px;padding: 35px">
         查看签到
@@ -106,18 +113,6 @@
     });
 </script>
 
-<%--<script>--%>
-<%--    //Demo--%>
-<%--    layui.use('form', function () {--%>
-<%--        var form = layui.form;--%>
-
-<%--        //监听提交--%>
-<%--        form.on('submit(formDemo)', function (data) {--%>
-<%--            layer.msg(JSON.stringify(data.field));--%>
-<%--            return false;--%>
-<%--        });--%>
-<%--    });--%>
-<%--</script>--%>
 <script>
     window.onload = function () {
         document.getElementById("querySign").className = "layui-this";

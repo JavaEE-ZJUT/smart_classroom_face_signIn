@@ -2,7 +2,7 @@ package cn.edu.zjut.action;
 
 import cn.edu.zjut.po.SignInstance;
 import cn.edu.zjut.service.IQuerySignInstanceService;
-import cn.edu.zjut.service.QuerySignInstanceService;
+import cn.edu.zjut.service.Impl.QuerySignInstanceService;
 
 import java.util.List;
 
